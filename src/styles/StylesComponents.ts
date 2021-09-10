@@ -24,5 +24,9 @@ export const Separator = styled.span`
   border-radius: 10px;
   display: block;
   margin-bottom: 3rem;
-  background-color: ${({theme}) => theme.primaryColor}
+  background-color: ${({theme}) => theme.primaryColor};
+  @media screen and (min-width: 960px) {
+    margin-bottom: 6rem;
+  }
+  
 `

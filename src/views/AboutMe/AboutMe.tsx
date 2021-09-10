@@ -52,7 +52,7 @@ const information = [
     },
     {
         label: 'Email',
-        text: 'pavlin_05òhotmail.com'
+        text: 'pavlin_05@hotmail.com'
     }
 ]
 
