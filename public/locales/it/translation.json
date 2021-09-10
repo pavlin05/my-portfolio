@@ -8,7 +8,7 @@
   },
   "aboutMe": {
     "title": "A proposito di me",
-    "description": " Ciao. mi chiamo Pablo Munoz, sono uno sviluppatore Frontend e Backend, ho conoscenza ed sperienza nello\nsviluppo di applicazioni web basati su HTM5, CSS3,\n            ReactJS, ExpressJs, MongoDB e MySql.\n            Sono una persona autodidatta con molta voglia di imparare nuove tecnologie ed espandere i miei orizzonti."
+    "description": "Ciao. mi chiamo Pablo Munoz, sono uno sviluppatore Frontend e Backend, ho conoscenza ed sperienza nello sviluppo di applicazioni web basati su HTM5, CSS3,\n            ReactJS, ExpressJs, MongoDB e MySql.\n            Sono una persona autodidatta con molta voglia di imparare nuove tecnologie ed espandere i miei orizzonti."
   },
   "skills": {
     "title": "Le mie Skills"

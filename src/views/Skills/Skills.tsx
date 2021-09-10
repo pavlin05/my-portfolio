@@ -13,20 +13,6 @@ import {
     SiTypescript
 } from "react-icons/si";
 import { Title ,Separator, Wrapper } from '../../styles/StylesComponents';
-/*
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-`
-const Title = styled.h2`
-  text-align: center;
-  margin-bottom: 4rem;
-  text-transform: uppercase;
-  color: ${({theme}) => theme.titleColor}
-`
-*/
 
 const Content = styled.div`
   width: 100%;
@@ -35,8 +21,8 @@ const Content = styled.div`
   gap: 2rem 1rem;
   grid-template-columns: 1fr 1fr;
   @media screen and (min-width: 960px) {
-    gap: 4rem 1rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 6rem 4rem;
+    grid-template-columns: 1fr 1fr 1fr ;
   }
 `
 

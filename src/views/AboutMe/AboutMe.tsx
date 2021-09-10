@@ -1,30 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {useTranslation} from "react-i18next";
-import { Title ,Separator, Wrapper } from '../../styles/StylesComponents';
-
-/*const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 1rem;
-`
-const Title = styled.h2`
-  text-align: center;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  color: ${({theme}) => theme.titleColor}
-`
-
-const Separator = styled.span`
-  width: 100%;
-  height: 1px;
-  border-radius: 10px;
-  display: block;
-  margin-bottom: 3rem;
-  background-color: ${({theme}) => theme.primaryColor}
-`*/
+import {Separator, Title, Wrapper} from '../../styles/StylesComponents';
 
 const Content = styled.div`
   display: grid;
@@ -36,11 +13,8 @@ const Content = styled.div`
   }
 
 `
-const AboutContent = styled.div`
-  //padding: 1rem;
-`
+
 const InfoContent = styled.div`
-  //padding: 1rem;
   width: 100%;
 `
 
@@ -48,11 +22,7 @@ const Description = styled.p`
   text-align: justify;
 `
 
-const List = styled.ul`
-
-`
-
-const Item = styled.li`
+const Item = styled.div`
   margin-bottom: 1rem;
   display: flex;
 `
@@ -67,40 +37,45 @@ const Text = styled.span`
   width: calc(100% - 130px);
 `
 
+const information = [
+    {
+        label: 'Nome',
+        text: 'Pablo Munoz'
+    },
+    {
+        label: 'Nato il',
+        text: '9 novembre ,1989'
+    },
+    {
+        label: 'Residenza',
+        text: 'Italia'
+    },
+    {
+        label: 'Email',
+        text: 'pavlin_05òhotmail.com'
+    }
+]
+
 const AboutMe: React.FC = () => {
     const {t} = useTranslation()
     return (
-        <Wrapper  id="aboutMe">
+        <Wrapper id="aboutMe">
             <Title>
                 {t('aboutMe.title')}
             </Title>
             <Separator/>
             <Content>
                 <InfoContent>
-                    <List>
-                        <Item>
-                            <Label>Nome: </Label>
-                            <Text>Pablo Munoz</Text>
+                    {information.map((info, index) =>
+                        <Item key={index}>
+                            <Label>{info.label}: </Label>
+                            <Text>{info.text}</Text>
                         </Item>
-                        <Item>
-                            <Label>Nato il: </Label>
-                            <Text>9 novembre, 1989</Text>
-                        </Item>
-                        <Item>
-                            <Label>Residenza: </Label>
-                            <Text>Italia</Text>
-                        </Item>
-                        <Item>
-                            <Label>Email: </Label>
-                            <Text>pavlin_05@hotmail.com</Text>
-                        </Item>
-                    </List>
+                    )}
                 </InfoContent>
-                <AboutContent>
-                    <Description>
-                        {t('aboutMe.description')}
-                    </Description>
-                </AboutContent>
+                <Description>
+                    {t('aboutMe.description')}
+                </Description>
             </Content>
         </Wrapper>
     )

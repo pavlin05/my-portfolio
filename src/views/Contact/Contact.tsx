@@ -1,24 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
-import {SiFacebook, SiInstagram, SiLinkedin} from "react-icons/si";
+import {SiFacebook, SiInstagram, SiLinkedin, SiMinutemailer} from "react-icons/si";
 import {useTranslation} from "react-i18next";
 import {Separator, Title, Wrapper} from "../../styles/StylesComponents";
-
-/*
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-`
-
-const Title = styled.h2`
-  text-align: center;
-  margin-bottom: 4rem;
-  text-transform: uppercase;
-  color: ${({theme}) => theme.titleColor}
-`
-*/
 
 const Content = styled.div`
   width: 100%;
@@ -79,6 +63,11 @@ const contacts = [
         label: 'Facebook',
         url: 'https://www.facebook.com/pablo.munoz.89',
         icon: <SiFacebook/>
+    },
+    {
+        label: 'E-mail',
+        url: 'mailto:pavlin_05@hotmail.com',
+        icon: <SiMinutemailer/>
     }
 ]
 const Contact: React.FC = () => {

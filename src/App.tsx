@@ -14,11 +14,6 @@ const Main = styled.main`
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-  > * {
-    //width: 100vw;
-    //height: calc(100vh - 70px);
-   
-  }
 `;
 
 function App() {

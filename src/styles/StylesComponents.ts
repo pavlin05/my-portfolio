@@ -7,6 +7,9 @@ export const Wrapper = styled.div`
   flex-direction: column;
   padding: 4rem 2rem;
   margin-bottom: 2rem;
+  @media screen and (min-width: 960px) {
+    height: 100vh;
+  }
 `
 export const Title = styled.h2`
   text-align: center;

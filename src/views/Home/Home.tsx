@@ -14,14 +14,8 @@ const Wrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
   }
+`
 
-`
-const ImageContent = styled.div`
-  //padding: 1rem;
-`
-const InfoContent = styled.div`
-  //padding: 1rem;
-`
 const Title = styled.h1`
   color: ${({theme}) => theme.titleColor}
 `
@@ -69,6 +63,7 @@ const StylesImage = styled.div`
 const Home: React.FC = () => {
     const {t} = useTranslation()
     const textRef = useRef<HTMLSpanElement>(null);
+
     useEffect(() => {
         if (!textRef.current) return;
         init(textRef.current, {
@@ -81,7 +76,7 @@ const Home: React.FC = () => {
 
     return (
         <Wrapper id="home">
-            <InfoContent>
+            <div>
                 <Title>
                     {t('home.title')}
                 </Title>
@@ -93,14 +88,14 @@ const Home: React.FC = () => {
                 <Description>
                     {t('home.description')}
                 </Description>
-            </InfoContent>
-            <ImageContent>
+            </div>
+            <div>
                 <StylesImage>
                     <img
                         src={'https://static01.nyt.com/images/2021/08/04/arts/04EVANGELION-DIRECTOR-Evangelion/04EVANGELION-DIRECTOR-Evangelion-mobileMasterAt3x.jpg'}
                         alt={'profile'}/>
                 </StylesImage>
-            </ImageContent>
+            </div>
         </Wrapper>
     );
 };
