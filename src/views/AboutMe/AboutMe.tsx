@@ -37,27 +37,27 @@ const Text = styled.span`
   width: calc(100% - 130px);
 `
 
-const information = [
-    {
-        label: 'Nome',
-        text: 'Pablo Munoz'
-    },
-    {
-        label: 'Nato il',
-        text: '9 novembre ,1989'
-    },
-    {
-        label: 'Residenza',
-        text: 'Italia'
-    },
-    {
-        label: 'Email',
-        text: 'pavlin_05@hotmail.com'
-    }
-]
-
 const AboutMe: React.FC = () => {
     const {t} = useTranslation()
+
+    const information = [
+        {
+            label: t('aboutMe.name'),
+            text: 'Pablo Munoz'
+        },
+        {
+            label: t('aboutMe.bornOn'),
+            text: t('aboutMe.dateOfBirth'),
+        },
+        {
+            label: t('aboutMe.residence'),
+            text: t('aboutMe.italy'),
+        },
+        {
+            label: t('aboutMe.email'),
+            text: 'pavlin_05@hotmail.com'
+        }
+    ]
     return (
         <Wrapper id="aboutMe">
             <Title>

@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.h1`
-  color: ${({theme}) => theme.titleColor}
+  color: ${({theme}) => theme.titleColor};
 `
 const SubTitle = styled.h3`
   margin-bottom: 1rem;
@@ -92,7 +92,7 @@ const Home: React.FC = () => {
             <div>
                 <StylesImage>
                     <img
-                        src={'https://static01.nyt.com/images/2021/08/04/arts/04EVANGELION-DIRECTOR-Evangelion/04EVANGELION-DIRECTOR-Evangelion-mobileMasterAt3x.jpg'}
+                        src={'/images/image01.jpg'}
                         alt={'profile'}/>
                 </StylesImage>
             </div>

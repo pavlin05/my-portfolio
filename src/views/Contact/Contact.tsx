@@ -27,6 +27,7 @@ const LinkCard = styled.a`
   transition: all ${({theme}) => theme.transitionTime} ease;
   color: inherit;
   text-decoration: inherit;
+  
   @media screen and (min-width: 960px) {
     &:hover {
       color: ${({theme}) => theme.primaryColor};
@@ -70,6 +71,7 @@ const contacts = [
         icon: <SiMinutemailer/>
     }
 ]
+
 const Contact: React.FC = () => {
     const {t} = useTranslation()
     return (

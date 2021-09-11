@@ -12,7 +12,7 @@ import {
     SiStyledComponents,
     SiTypescript
 } from "react-icons/si";
-import { Title ,Separator, Wrapper } from '../../styles/StylesComponents';
+import {Separator, Title, Wrapper} from '../../styles/StylesComponents';
 
 const Content = styled.div`
   width: 100%;
@@ -20,6 +20,7 @@ const Content = styled.div`
   place-items: center;
   gap: 2rem 1rem;
   grid-template-columns: 1fr 1fr;
+  
   @media screen and (min-width: 960px) {
     gap: 6rem 4rem;
     grid-template-columns: 1fr 1fr 1fr ;
