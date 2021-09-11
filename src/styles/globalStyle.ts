@@ -1,7 +1,7 @@
 import {createGlobalStyle} from "styled-components";
 import {ThemeInterface} from "./theme";
 
-const GlobalStyle = createGlobalStyle<{ theme: ThemeInterface}>`
+const GlobalStyle = createGlobalStyle<{ theme: ThemeInterface }>`
   * {
     margin: 0;
     padding: 0;
@@ -19,6 +19,11 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeInterface}>`
     //font-size: 1.1rem;
     font-weight: 300;
     transition: all ${({theme}) => theme.transitionTime};
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: initial;
   }
 `
 export default GlobalStyle

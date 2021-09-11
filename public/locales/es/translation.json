@@ -1,7 +1,25 @@
 {
   "home": {
-    "title": "Hola, Mi nombre es Pablo"
+    "title": "Ciao, Mi chiamo Pablo",
+    "frontend": "Frontend Developer ",
+    "backend": "Backend Developer ",
+    "description": "Benvenuti al mio portfolio, sono un Frontend(React) e backend(NodeJs) developer.",
+    "aboutMe": "A propsito di me"
+  },
+  "aboutMe": {
+    "title": "A proposito di me",
+    "name": "Nome",
+    "bornOn": "Nato il",
+    "residence" : "Residenza",
+    "email": "Indirizzo email",
+    "italy": "Italia",
+    "dateOfBirth": "9 novembre ,1989",
+    "description": "Ciao. mi chiamo Pablo Munoz, sono uno sviluppatore Frontend e Backend, ho conoscenza ed sperienza nello sviluppo di applicazioni web basati su HTM5, CSS3,\n            ReactJS, ExpressJs, MongoDB e MySql.\n            Sono una persona autodidatta con molta voglia di imparare nuove tecnologie ed espandere i miei orizzonti."
+  },
+  "skills": {
+    "title": "Le mie Skills"
   },
   "contact": {
+    "title": "Contatti"
   }
 }
