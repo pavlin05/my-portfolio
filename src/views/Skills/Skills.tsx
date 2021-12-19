@@ -33,11 +33,17 @@ const ContentIcon = styled.div`
   text-align: center;
   gap: 0.5rem;
   font-weight: bold;
-
+  transition: all ${({theme}) => theme.transitionTime} ease;
   svg {
     align-self: center;
     width: 4rem;
     height: 4rem;
+  }
+  
+  @media screen and (min-width: 960px) {
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 `
 
