@@ -67,7 +67,7 @@ const contacts = [
     },
     {
         label: 'E-mail',
-        url: 'mailto:pavlin_05@hotmail.com',
+        url: 'mailto:pablo.munoz05@hotmail.com',
         icon: <SiMinutemailer/>
     }
 ]

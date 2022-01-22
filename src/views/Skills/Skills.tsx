@@ -6,10 +6,10 @@ import {
     SiGit,
     SiHtml5,
     SiJavascript,
-    SiNodeDotJs,
+    SiNodedotjs,
     SiReact,
     SiRedux,
-    SiStyledComponents,
+    SiStyledcomponents,
     SiTypescript
 } from "react-icons/si";
 import {Separator, Title, Wrapper} from '../../styles/StylesComponents';
@@ -62,8 +62,8 @@ const Skills: React.FC = () => {
                 <StyledIcon label='TypeScript' icon={<SiTypescript fill='#3178C6'/>}/>
                 <StyledIcon label='React' icon={<SiReact fill='#61DAFB'/>}/>
                 <StyledIcon label='Redux' icon={<SiRedux fill='#764ABC'/>}/>
-                <StyledIcon label='NodeJs' icon={<SiNodeDotJs fill='#339933'/>}/>
-                <StyledIcon label='Styled Components' icon={<SiStyledComponents fill='#DB7093'/>}/>
+                <StyledIcon label='NodeJs' icon={<SiNodedotjs fill='#339933'/>}/>
+                <StyledIcon label='Styled Components' icon={<SiStyledcomponents fill='#DB7093'/>}/>
                 <StyledIcon label='Git' icon={<SiGit fill='#F14E32'/>}/>
             </Content>
         </Wrapper>

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 //import {NavLink as Link} from "react-router-dom";
 import {FaBars, FaMagento, FaTimes} from "react-icons/fa";
-import {FiMoon, FiSun} from "react-icons/all";
+import {FiMoon, FiSun} from "react-icons/fi";
 import {Link} from 'react-scroll'
 
 const Header = styled.header`
