@@ -187,7 +187,7 @@ const Navbar: React.FC<{ theme: string, setTheme: (e: string) => void }> = ({the
                             spy={true} to="contact"
                             smooth={true}
                             duration={500}
-                            onClick={openDrawer}>Contact </NavLink>
+                            onClick={openDrawer}>Contact</NavLink>
                     </NavItem>
                 </NavMenu>
                 <ModeIcon onClick={toggleTheme}>
