@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledButton = styled.button<{ primary?: boolean, big: boolean, fontBig: boolean }>`
   color: white;
   border-radius: 4px;
-  background: ${({primary}) => primary ? '#4b59f7' : '#0467fb'};
+  background: ${({primary, theme}) => primary ? '#4b59f7' : theme.primaryColor};
   white-space: nowrap;
   padding: ${({big}) => big ? '12px 64px' : '10px 20px'};
   font-size: ${({fontBig}) => fontBig ? '20px' : '16px'};
@@ -15,7 +15,7 @@ const StyledButton = styled.button<{ primary?: boolean, big: boolean, fontBig: b
   &:hover {
     transition: all 0.3s ease-out;
     background: white;
-    background: ${({primary}) => primary ? '#0467fb' : '#4b59f7'};
+    background: ${({primary, theme}) => primary ? theme.primaryColor : '#4b59f7'};
   }
 
   width: 100%;
@@ -24,7 +24,7 @@ const StyledButton = styled.button<{ primary?: boolean, big: boolean, fontBig: b
   }
 `;
 
-interface Props {
+interface Props extends React.HTMLProps<HTMLButtonElement> {
     primary?: boolean
     big?: boolean
     fontBig?: boolean
@@ -33,7 +33,7 @@ interface Props {
 
 const Button: React.FC<Props> = ({primary = false, big = false, fontBig = false, text}) => {
     return (
-        <StyledButton primary={primary} big={big} fontBig={big} >
+        <StyledButton primary={primary} big={big} fontBig={big}>
             {text}
         </StyledButton>
     );
