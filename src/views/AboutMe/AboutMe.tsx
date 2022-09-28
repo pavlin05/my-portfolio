@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
-import {useTranslation} from "react-i18next";
-import {Separator, Title, Wrapper} from '../../styles/StylesComponents';
+import { useTranslation } from "react-i18next";
+import { Separator, Title, Wrapper } from '../../styles/StylesComponents';
 
 const Content = styled.div`
   display: grid;
@@ -11,7 +11,6 @@ const Content = styled.div`
   @media screen and (min-width: 960px) {
     grid-template-columns: 1fr 1fr;
   }
-
 `
 
 const InfoContent = styled.div`
@@ -45,10 +44,10 @@ const AboutMe: React.FC = () => {
             label: t('aboutMe.name'),
             text: 'Pablo Munoz'
         },
-      /*  {
-            label: t('aboutMe.bornOn'),
-            text: t('aboutMe.dateOfBirth'),
-        },*/
+        /*  {
+              label: t('aboutMe.bornOn'),
+              text: t('aboutMe.dateOfBirth'),
+          },*/
         {
             label: t('aboutMe.residence'),
             text: t('aboutMe.italy'),
