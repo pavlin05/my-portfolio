@@ -1,25 +1,64 @@
 {
   "home": {
-    "title": "Ciao, Mi chiamo Pablo",
-    "frontend": "Frontend Developer ",
-    "backend": "Backend Developer ",
-    "description": "Benvenuti al mio portfolio, sono un Frontend(React) e backend(NodeJs) developer.",
-    "aboutMe": "A propsito di me"
+    "title": "Hola, me llamo Pablo",
+    "frontend": "Desarrollador Frontend ",
+    "backend": "Desarrollador Backend ",
+    "description": "Bienvenidos a mi portafolio, soy un desarrollador Frontend (React) y Backend (NodeJs).",
+    "aboutMe": "Sobre mí"
   },
   "aboutMe": {
-    "title": "A proposito di me",
-    "name": "Nome",
-    "bornOn": "Nato il",
-    "residence" : "Residenza",
-    "email": "Indirizzo email",
+    "title": "Sobre mí",
+    "name": "Nombre",
+    "bornOn": "Nacido el",
+    "residence": "Residencia",
+    "email": "Dirección de correo",
     "italy": "Italia",
-    "dateOfBirth": "9 novembre ,1989",
-    "description": "Ciao. mi chiamo Pablo Munoz, sono uno sviluppatore Frontend e Backend, ho conoscenza ed sperienza nello sviluppo di applicazioni web basati su HTM5, CSS3,\n            ReactJS, ExpressJs, MongoDB e MySql.\n            Sono una persona autodidatta con molta voglia di imparare nuove tecnologie ed espandere i miei orizzonti."
+    "dateOfBirth": "9 de noviembre de 1989",
+    "description": "Hola, me llamo Pablo Munoz. Soy desarrollador Frontend y Backend con experiencia en aplicaciones web basadas en HTML5, CSS3, ReactJS, ExpressJs, MongoDB y MySQL. Soy autodidacta y tengo muchas ganas de aprender nuevas tecnologías y ampliar mis horizontes."
   },
   "skills": {
-    "title": "Le mie Skills"
+    "title": "Mis Habilidades"
   },
   "contact": {
-    "title": "Contatti"
+    "title": "Contacto"
+  },
+  "animio": {
+    "privacy": {
+      "title": "Política de privacidad – Animio",
+      "lastUpdated": "Última actualización",
+      "lastUpdatedDate": "30 de agosto de 2025",
+      "index": "Índice",
+      "sections": {
+        "intro": "Introducción",
+        "data": "Datos recopilados",
+        "purpose": "Finalidad del tratamiento",
+        "legal": "Base legal (GDPR)",
+        "sharing": "Compartición de datos",
+        "retention": "Conservación",
+        "security": "Seguridad",
+        "rights": "Derechos de los usuarios",
+        "minors": "Privacidad de menores",
+        "thirdparties": "Servicios de terceros",
+        "cookies": "Cookies y tecnologías similares",
+        "contact": "Contacto",
+        "changes": "Cambios en la política"
+      },
+      "content": {
+        "intro": "Animio respeta la privacidad de los usuarios y se compromete a proteger los datos personales y la información relacionada con las mascotas. Esta política describe cómo se recopilan, usan y protegen los datos al utilizar la aplicación Animio.",
+        "data": "Animio puede recopilar: datos de perfiles de mascotas (nombre, especie/raza, edad, sexo, fotos, notas), datos de visitas veterinarias, ubicación si se habilita, datos técnicos del dispositivo y datos de contacto si se proporcionan.",
+        "purpose": "Los datos recopilados se utilizan para gestionar los perfiles de mascotas, mostrar veterinarios cercanos, enviar recordatorios y notificaciones, mejorar la calidad y seguridad de la aplicación y proporcionar soporte a los usuarios.",
+        "legal": "El tratamiento de datos se basa en: ejecución del contrato, consentimiento para funciones opcionales, interés legítimo para seguridad y mejora, y obligaciones legales.",
+        "sharing": "Los datos personales no se venden. Se comparten solo con proveedores como Supabase, servicios de mapas (Apple/Google Maps) o servicios de mensajería necesarios para el funcionamiento de la app.",
+        "retention": "Los datos se conservan el tiempo necesario para prestar los servicios y cumplir con las obligaciones legales. Los usuarios pueden solicitar la eliminación de sus datos en cualquier momento.",
+        "security": "Las comunicaciones entre la app y el servidor están protegidas mediante HTTPS/TLS, y se aplican medidas técnicas y organizativas para proteger los datos.",
+        "rights": "Los usuarios tienen derecho a acceder, modificar, eliminar datos, limitar el tratamiento, oponerse, solicitar portabilidad o revocar el consentimiento.",
+        "minors": "La app no está destinada a menores de 14 años. No se recopilan datos de menores de forma consciente. Los padres o tutores pueden solicitar su eliminación.",
+        "thirdparties": "La app puede integrar servicios de terceros que manejan los datos según sus propias políticas.",
+        "cookies": "La app móvil no utiliza cookies. El sitio web puede usar cookies técnicas o analíticas, gestionables desde el navegador.",
+        "contact": "Responsable del tratamiento: Pablo Munoz – Email: pablo.munoz05@hotmail.com – Sitio web: https://www.pablo-munoz.com",
+        "changes": "Esta Política de Privacidad puede actualizarse periódicamente. Los cambios se publicarán en esta página."
+      },
+      "disclaimer": ""
+    }
   }
 }

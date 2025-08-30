@@ -10,7 +10,7 @@
     "title": "A proposito di me",
     "name": "Nome",
     "bornOn": "Nato il",
-    "residence" : "Residenza",
+    "residence": "Residenza",
     "email": "Indirizzo email",
     "italy": "Italia",
     "dateOfBirth": "9 novembre ,1989",
@@ -21,5 +21,44 @@
   },
   "contact": {
     "title": "Contatti"
+  },
+  "animio": {
+    "privacy": {
+      "title": "Privacy Policy – Animio",
+      "lastUpdated": "Ultimo aggiornamento",
+      "lastUpdatedDate": "30 agosto 2025",
+      "index": "Indice",
+      "sections": {
+        "intro": "Introduzione",
+        "data": "Dati raccolti",
+        "purpose": "Finalità del trattamento",
+        "legal": "Basi giuridiche (GDPR)",
+        "sharing": "Condivisione dei dati",
+        "retention": "Conservazione",
+        "security": "Sicurezza",
+        "rights": "Diritti degli utenti",
+        "minors": "Privacy dei minori",
+        "thirdparties": "Servizi di terze parti",
+        "cookies": "Cookie e tecnologie simili",
+        "contact": "Contatti",
+        "changes": "Modifiche alla policy"
+      },
+      "content": {
+        "intro": "Animio rispetta la privacy degli utenti e si impegna a proteggere i dati personali e le informazioni relative agli animali domestici. Questa informativa descrive come vengono raccolti, utilizzati e protetti i dati durante l’utilizzo dell’app Animio.",
+        "data": "Animio può raccogliere: dati dei profili animali (nome, specie/razza, età, sesso, foto, note), dati relativi a visite veterinarie, geolocalizzazione se abilitata, dati tecnici del dispositivo, dati di contatto se forniti.",
+        "purpose": "I dati raccolti sono utilizzati per gestire i profili degli animali, mostrare veterinari vicini, inviare promemoria e notifiche, migliorare qualità e sicurezza dell’app e fornire supporto agli utenti.",
+        "legal": "Il trattamento dei dati si basa su: esecuzione del contratto, consenso per funzionalità opzionali, interesse legittimo per sicurezza e miglioramento, obblighi legali.",
+        "sharing": "I dati personali non vengono venduti a terzi. Condivisi solo con fornitori come Supabase e servizi mappe (Apple/Google Maps) o messaggistica necessari al funzionamento dell’app.",
+        "retention": "I dati vengono conservati per il tempo necessario a fornire i servizi e adempiere agli obblighi di legge. L’utente può richiedere la cancellazione in qualsiasi momento.",
+        "security": "Le comunicazioni tra l’app e il server sono protette tramite HTTPS/TLS e sono adottate misure tecniche e organizzative per proteggere i dati.",
+        "rights": "L’utente ha diritto ad accedere, modificare, cancellare i dati, limitarne il trattamento, opporti, richiedere portabilità o revocare il consenso.",
+        "minors": "L’app non è destinata a minori di 14 anni. Non vengono raccolti consapevolmente dati di minori. I genitori o tutori possono richiederne la rimozione.",
+        "thirdparties": "L’app può integrare servizi di terze parti che trattano i dati secondo le proprie policy.",
+        "cookies": "L’app mobile non utilizza cookie. Il sito può usare cookie tecnici o analitici, gestibili dal browser.",
+        "contact": "Titolare del trattamento: Pablo Munoz – Email: pablo.munoz05@hotmail.com – Sito web: https://www.pablo-munoz.com",
+        "changes": "Questa Privacy Policy può essere aggiornata periodicamente. Le modifiche saranno pubblicate su questa pagina."
+      },
+      "disclaimer": ""
+    }
   }
 }

@@ -4,6 +4,7 @@ import styled from "styled-components";
 import {FaBars, FaMagento, FaTimes} from "react-icons/fa";
 import {FiMoon, FiSun} from "react-icons/fi";
 import {Link} from 'react-scroll'
+import { useLocation } from 'react-router-dom'
 
 const Header = styled.header`
   height: 70px;
@@ -125,6 +126,8 @@ const ModeIcon = styled.div`
 `
 
 const Navbar: React.FC<{ theme: string, setTheme: (e: string) => void }> = ({theme, setTheme}) => {
+    const location = useLocation()
+    const hideLinks = location.pathname === '/animio/privacy';
     const [open, setOpen] = useState<boolean>(false)
     const toggleTheme = () => theme === 'light' ? setTheme('dark') : setTheme('light')
     const openDrawer = () => setOpen(!open)
@@ -139,56 +142,46 @@ const Navbar: React.FC<{ theme: string, setTheme: (e: string) => void }> = ({the
                     <LogoIcon/>Pablo
                 </NavLogo>
                 <NavMenu open={open}>
-                    <NavItem>
-                        <NavLink
-                            activeClass="active"
-                            spy={true} to="home"
-                            smooth={true}
-                            duration={500}
-                            onClick={openDrawer}>Home</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
-                            activeClass="active"
-                            spy={true}
-                            to="aboutMe"
-                            smooth={true}
-                            duration={500}
-                            onClick={openDrawer}>About Me</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
-                            activeClass="active"
-                            spy={true} to="skills"
-                            smooth={true}
-                            duration={500}
-                            onClick={openDrawer}>Skills</NavLink>
-                    </NavItem>
-                    {/*<NavItem>
-                        <NavLink
-                            activeClass="active"
-                            spy={true} to="jobs"
-                            smooth={true}
-                            duration={500}
-                            onClick={openDrawer}>Jobs</NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink
-                            activeClass="active"
-                            spy={true}
-                            to="services"
-                            smooth={true}
-                            duration={500}
-                            onClick={openDrawer}>Services</NavLink>
-                    </NavItem>*/}
-                    <NavItem>
-                        <NavLink
-                            activeClass="active"
-                            spy={true} to="contact"
-                            smooth={true}
-                            duration={500}
-                            onClick={openDrawer}>Contact</NavLink>
-                    </NavItem>
+                    {!hideLinks && (
+                        <>
+                            <NavItem>
+                                <NavLink
+                                    activeClass="active"
+                                    spy={true}
+                                    to="home"
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={openDrawer}>Home</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink
+                                    activeClass="active"
+                                    spy={true}
+                                    to="aboutMe"
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={openDrawer}>About Me</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink
+                                    activeClass="active"
+                                    spy={true}
+                                    to="skills"
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={openDrawer}>Skills</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink
+                                    activeClass="active"
+                                    spy={true}
+                                    to="contact"
+                                    smooth={true}
+                                    duration={500}
+                                    onClick={openDrawer}>Contact</NavLink>
+                            </NavItem>
+                        </>
+                    )}
                 </NavMenu>
                 <ModeIcon onClick={toggleTheme}>
                     {theme === 'light' ? <FiMoon size={26}/> : <FiSun size={26}/>}
