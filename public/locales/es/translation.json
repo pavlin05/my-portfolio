@@ -59,6 +59,20 @@
         "changes": "Esta Política de Privacidad puede actualizarse periódicamente. Los cambios se publicarán en esta página."
       },
       "disclaimer": ""
+    },
+    "resetPassword": {
+      "title": "Reset Password – Animio",
+      "description": "Enter your new password for your Animio account.",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "button": "Update password",
+      "messages": {
+        "success": "¡Contraseña actualizada correctamente! Ahora puedes iniciar sesión en la aplicación Animio.",
+        "mismatch": "Passwords do not match.",
+        "invalid": "Invalid or expired link. Please request a new reset.",
+        "short": "Password must be at least 6 characters long.",
+        "session": "Error creating session."
+      }
     }
   }
 }
