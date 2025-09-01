@@ -58,7 +58,7 @@ const ResetPassword: React.FC = () => {
     const [message, setMessage] = useState('');
     const [canReset, setCanReset] = useState(false);
     const { t } = useTranslation();
-    console.log({ password, confirm, message, canReset });
+
     useEffect(() => {
         const { data: listener } = supabase.auth.onAuthStateChange(
             async (event, session) => {
