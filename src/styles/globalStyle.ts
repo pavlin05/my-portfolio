@@ -1,7 +1,6 @@
-import {createGlobalStyle} from "styled-components";
-import {ThemeInterface} from "./theme";
+import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle<{ theme: ThemeInterface }>`
+const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -12,18 +11,18 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeInterface }>`
   }
 
   body {
-    color: ${({theme}) => theme.text};
-    background: ${({theme}) => theme.body};
+    color: ${({ theme }) => theme.text};
+    background: ${({ theme }) => theme.body};
     overflow-x: hidden;
     line-height: 1.8;
-    //font-size: 1.1rem;
     font-weight: 300;
-    transition: all ${({theme}) => theme.transitionTime};
+    transition: all ${({ theme }) => theme.transitionTime};
   }
 
   h1 {
     font-size: 3rem;
     line-height: initial;
   }
-`
-export default GlobalStyle
+`;
+
+export default GlobalStyle;
