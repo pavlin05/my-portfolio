@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { supabase } from '../../lib/supabase'
 import { useTranslation } from 'react-i18next'
+import { supabase } from '../../lib/supabase'
 
 const Container = styled.main`
     max-width: 100%;
