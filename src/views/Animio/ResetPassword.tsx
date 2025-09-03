@@ -1,23 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import { supabase } from '../../lib/supabase'
-import { useTranslation } from 'react-i18next'
-import { useSearchParams } from 'react-router-dom'
 import Typography from '../../components/Ui/Typography'
+import useQueryLang from '../../hooks/useQueryLang.ts'
+import { useTranslation } from 'react-i18next'
 
 const ResetPassword: React.FC = () => {
   const [password, setPassword] = useState('')
   const [confirm, setConfirm] = useState('')
   const [message, setMessage] = useState('')
   const [canReset, setCanReset] = useState(false)
-  const { t, i18n } = useTranslation()
-  const [searchParams] = useSearchParams()
-
-  useEffect(() => {
-    const lang = searchParams.get('lang')
-    if (lang) {
-      void i18n.changeLanguage(lang)
-    }
-  }, [searchParams, i18n])
+  const { t } = useTranslation()
+  useQueryLang()
 
   useEffect(() => {
     const { data: listener } = supabase.auth.onAuthStateChange(

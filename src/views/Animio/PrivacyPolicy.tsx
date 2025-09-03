@@ -1,19 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { useSearchParams } from 'react-router-dom'
 import Typography from '../../components/Ui/Typography'
+import useQueryLang from '../../hooks/useQueryLang.ts'
 
 const PrivacyPolicy: React.FC = () => {
   const { t } = useTranslation()
-  const { i18n } = useTranslation()
-  const [searchParams] = useSearchParams()
-
-  useEffect(() => {
-    const lang = searchParams.get('lang')
-    if (lang) {
-      void i18n.changeLanguage(lang)
-    }
-  }, [searchParams, i18n])
+  useQueryLang()
 
   const lastUpdated = t('animio.privacy.lastUpdatedDate')
 
