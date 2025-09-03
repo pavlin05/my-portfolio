@@ -1,84 +1,51 @@
-import React from 'react';
-import styled from "styled-components";
-import { useTranslation } from "react-i18next";
-import { Separator, Title, Wrapper } from '../../styles/StylesComponents';
-
-const Content = styled.div`
-  display: grid;
-  place-items: center;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
-  @media screen and (min-width: 960px) {
-    grid-template-columns: 1fr 1fr;
-  }
-`
-
-const InfoContent = styled.div`
-  width: 100%;
-`
-
-const Description = styled.p`
-  text-align: justify;
-`
-
-const Item = styled.div`
-  margin-bottom: 1rem;
-  display: flex;
-`
-
-const Label = styled.span`
-  font-weight: 600;
-  color: ${({theme}) => theme.titleColor};
-  width: 130px;
-`
-
-const Text = styled.span`
-  width: calc(100% - 130px);
-`
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import Typography from '../../components/Ui/Typography'
+import { Section, SectionSeparator } from '../../components/Section/Section.tsx'
 
 const AboutMe: React.FC = () => {
-    const {t} = useTranslation()
+  const { t } = useTranslation()
 
-    const information = [
-        {
-            label: t('aboutMe.name'),
-            text: 'Pablo Munoz'
-        },
-        /*  {
-              label: t('aboutMe.bornOn'),
-              text: t('aboutMe.dateOfBirth'),
-          },*/
-        {
-            label: t('aboutMe.residence'),
-            text: t('aboutMe.italy'),
-        },
-        {
-            label: t('aboutMe.email'),
-            text: 'pavlin_05@hotmail.com'
-        }
-    ]
-    return (
-        <Wrapper id="aboutMe">
-            <Title>
-                {t('aboutMe.title')}
-            </Title>
-            <Separator/>
-            <Content>
-                <InfoContent>
-                    {information.map((info, index) =>
-                        <Item key={index}>
-                            <Label>{info.label}: </Label>
-                            <Text>{info.text}</Text>
-                        </Item>
-                    )}
-                </InfoContent>
-                <Description>
-                    {t('aboutMe.description')}
-                </Description>
-            </Content>
-        </Wrapper>
-    )
-};
+  const information = [
+    { label: t('aboutMe.name'), text: 'Pablo Munoz' },
+    // { label: t('aboutMe.bornOn'), text: t('aboutMe.dateOfBirth') },
+    { label: t('aboutMe.residence'), text: t('aboutMe.italy') },
+    { label: t('aboutMe.email'), text: 'pavlin_05@hotmail.com' },
+  ]
 
-export default AboutMe;
+  return (
+    <Section id="aboutMe" className="gap-12 justify-center">
+      {/* Titolo + separatore */}
+      <div className="text-center">
+        <Typography variant="h2" bold>
+          {t('aboutMe.title')}
+        </Typography>
+        <SectionSeparator />
+      </div>
 
+      {/* Contenuto a 2 colonne */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-start">
+        {/* Info personali */}
+        <div className="w-full space-y-4">
+          {information.map((info, index) => (
+            <div key={index} className="flex">
+              <span className="w-32 font-semibold text-gray-900 dark:text-gray-100">
+                {info.label}:
+              </span>
+              <span className="flex-1 text-gray-700 dark:text-gray-300">
+                {info.text}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        {/* Descrizione */}
+        <p className="text-justify text-gray-700 dark:text-gray-300">
+          {t('aboutMe.description')}
+        </p>
+      </div>
+    </Section>
+  )
+}
+
+export default AboutMe

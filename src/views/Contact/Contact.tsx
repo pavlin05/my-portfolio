@@ -1,97 +1,77 @@
-import React from 'react';
-import styled from "styled-components";
-import {SiFacebook, SiInstagram, SiLinkedin, SiMinutemailer} from "react-icons/si";
-import {useTranslation} from "react-i18next";
-import {Separator, Title, Wrapper} from "../../styles/StylesComponents";
+import React from 'react'
+import {
+  SiFacebook,
+  SiInstagram,
+  SiLinkedin,
+  SiMinutemailer,
+} from 'react-icons/si'
+import { useTranslation } from 'react-i18next'
+import Typography from '../../components/Ui/Typography'
+import { Section, SectionSeparator } from '../../components/Section/Section.tsx'
 
-const Content = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  place-items: center;
-  
-  @media screen and (min-width: 960px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-`
+type ContactItem = {
+  label: string
+  url: string
+  icon: React.ReactNode
+}
 
-const LinkCard = styled.a`
-  justify-content: center;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 1rem;
-  height: 200px;
-  background: ${({theme}) => theme.navBg};
-  transition: all ${({theme}) => theme.transitionTime} ease;
-  color: inherit;
-  text-decoration: inherit;
-  
-  @media screen and (min-width: 960px) {
-    &:hover {
-      color: ${({theme}) => theme.primaryColor};
-      transform: scale(1.1);
-    }
-  }
-`
-const ContentIcon = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 0.5rem;
-  font-weight: bold;
-
-  svg {
-    align-self: center;
-    width: 4rem;
-    height: 4rem;
-  }
-`
-
-const contacts = [
-    {
-        label: 'Linkedin',
-        url: 'https://www.linkedin.com/in/pablo-munoz-001975144/',
-        icon: <SiLinkedin/>
-    },
-    {
-        label: 'Instagram',
-        url: 'https://www.instagram.com/pavlin05/',
-        icon: <SiInstagram/>
-    },
-    {
-        label: 'Facebook',
-        url: 'https://www.facebook.com/pablo.munoz.89',
-        icon: <SiFacebook/>
-    },
-    {
-        label: 'E-mail',
-        url: 'mailto:pablo.munoz05@hotmail.com',
-        icon: <SiMinutemailer/>
-    }
+const contacts: ContactItem[] = [
+  {
+    label: 'Linkedin',
+    url: 'https://www.linkedin.com/in/pablo-munoz-001975144/',
+    icon: <SiLinkedin className="w-16 h-16" />,
+  },
+  {
+    label: 'Instagram',
+    url: 'https://www.instagram.com/pavlin05/',
+    icon: <SiInstagram className="w-16 h-16" />,
+  },
+  {
+    label: 'Facebook',
+    url: 'https://www.facebook.com/pablo.munoz.89',
+    icon: <SiFacebook className="w-16 h-16" />,
+  },
+  {
+    label: 'E-mail',
+    url: 'mailto:pablo.munoz05@hotmail.com',
+    icon: <SiMinutemailer className="w-16 h-16" />,
+  },
 ]
 
-const Contact: React.FC = () => {
-    const {t} = useTranslation()
-    return (
-        <Wrapper id="contact">
-            <Title>
-                {t('contact.title')}
-            </Title>
-            <Separator/>
-            <Content>
-                {contacts.map((contact, index) =>
-                    <LinkCard href={contact.url} target='_blank' key={index}>
-                        <ContentIcon>
-                            {contact.icon}
-                            {contact.label}
-                        </ContentIcon>
-                    </LinkCard>
-                )}
-            </Content>
-        </Wrapper>
-    );
-};
+type ContactCardProps = {
+  contact: ContactItem
+}
 
-export default Contact;
+const ContactCard: React.FC<ContactCardProps> = ({ contact }) => (
+  <a
+    href={contact.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex flex-col items-center justify-center gap-2 w-full h-48 rounded-xl bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-transform duration-300 hover:scale-105 hover:text-blue-600"
+  >
+    {contact.icon}
+    <span className="font-bold">{contact.label}</span>
+  </a>
+)
+
+const Contact: React.FC = () => {
+  const { t } = useTranslation()
+
+  return (
+    <Section id="contact" className="gap-12 justify-center">
+      <div className="text-center">
+        <Typography variant="h2" bold>
+          {t('contact.title')}
+        </Typography>
+        <SectionSeparator />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center">
+        {contacts.map((contact) => (
+          <ContactCard key={contact.label} contact={contact} />
+        ))}
+      </div>
+    </Section>
+  )
+}
+
+export default Contact
