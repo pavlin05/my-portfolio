@@ -1,125 +1,90 @@
-import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import { useTranslation } from 'react-i18next'
+import React, { useState, useEffect } from 'react'
 import { supabase } from '../../lib/supabase'
-
-const Container = styled.main`
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 3rem 1.5rem;
-    color: ${({ theme }) => theme.textColor};
-    @media screen and (min-width: 960px) {
-        max-width: 40%;
-    }
-`;
-
-const Title = styled.h1`
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: ${({ theme }) => theme.titleColor};
-`;
-
-const Description = styled.p`
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-`;
-
-const Input = styled.input`
-  width: 100%;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid ${({ theme }) => theme.textColor};
-  border-radius: 6px;
-  background: ${({ theme }) => theme.body};
-  color: ${({ theme }) => theme.textColor};
-`;
-
-const Button = styled.button`
-  padding: 0.75rem 1.5rem;
-  background-color: ${({ theme }) => theme.primaryColor};
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  &:hover { opacity: 0.9; }
-`;
-
-const Message = styled.p`
-  margin-top: 1rem;
-  color: ${({ theme }) => theme.textColor};
-`;
+import Typography from '../../components/Ui/Typography'
+import useQueryLang from '../../hooks/useQueryLang.ts'
+import { useTranslation } from 'react-i18next'
 
 const ResetPassword: React.FC = () => {
-    const [password, setPassword] = useState('');
-    const [confirm, setConfirm] = useState('');
-    const [message, setMessage] = useState('');
-    const [canReset, setCanReset] = useState(false);
-    const { t } = useTranslation();
+  const [password, setPassword] = useState('')
+  const [confirm, setConfirm] = useState('')
+  const [message, setMessage] = useState('')
+  const [canReset, setCanReset] = useState(false)
+  const { t } = useTranslation()
+  useQueryLang()
 
-    useEffect(() => {
-        const { data: listener } = supabase.auth.onAuthStateChange(
-            async (event, session) => {
-                if (event === 'PASSWORD_RECOVERY') {
-                    setCanReset(true);
-                }
-            }
-        );
-
-        return () => {
-            listener.subscription.unsubscribe();
-        };
-    }, []);
-
-    const handleReset = async () => {
-        if (!canReset) {
-            setMessage(t('animio.resetPassword.messages.invalid'));
-            return;
+  useEffect(() => {
+    const { data: listener } = supabase.auth.onAuthStateChange(
+      async (event) => {
+        if (event === 'PASSWORD_RECOVERY') {
+          setCanReset(true)
         }
-        if (!password || password.length < 6) {
-            setMessage(t('animio.resetPassword.messages.short'));
-            return;
-        }
-        if (password !== confirm) {
-            setMessage(t('animio.resetPassword.messages.mismatch'));
-            return;
-        }
+      },
+    )
 
-        const { error } = await supabase.auth.updateUser({ password });
+    return () => {
+      listener.subscription.unsubscribe()
+    }
+  }, [])
 
-        if (error) {
-            setMessage(`${t('animio.resetPassword.messages.error')} ${error.message}`);
-        } else {
-            setMessage(t('animio.resetPassword.messages.success'));
-            setPassword('');
-            setConfirm('');
-        }
-    };
+  const handleReset = async () => {
+    if (!canReset) {
+      setMessage(t('animio.resetPassword.messages.invalid'))
+      return
+    }
+    if (!password || password.length < 6) {
+      setMessage(t('animio.resetPassword.messages.short'))
+      return
+    }
+    if (password !== confirm) {
+      setMessage(t('animio.resetPassword.messages.mismatch'))
+      return
+    }
 
-    return (
-        <Container>
-            <Title>{t('animio.resetPassword.title')}</Title>
-            <Description>{t('animio.resetPassword.description')}</Description>
+    const { error } = await supabase.auth.updateUser({ password })
 
-            <Input
-                type="password"
-                placeholder={t('animio.resetPassword.newPassword')}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-            />
-            <Input
-                type="password"
-                placeholder={t('animio.resetPassword.confirmPassword')}
-                value={confirm}
-                onChange={(e) => setConfirm(e.target.value)}
-            />
+    if (error) {
+      setMessage(`${t('animio.resetPassword.messages.error')} ${error.message}`)
+    } else {
+      setMessage(t('animio.resetPassword.messages.success'))
+      setPassword('')
+      setConfirm('')
+    }
+  }
 
-            <Button onClick={handleReset}>{t('animio.resetPassword.button')}</Button>
-            {message && <Message>{message}</Message>}
-        </Container>
-    );
-};
+  return (
+    <main className="max-w-md mx-auto px-6 py-12">
+      <Typography variant="h1" className="font-bold mb-4">
+        {t('animio.resetPassword.title')}
+      </Typography>
+      <Typography variant="p" className="mb-6 leading-relaxed">
+        {t('animio.resetPassword.description')}
+      </Typography>
 
-export default ResetPassword;
+      <input
+        type="password"
+        placeholder={t('animio.resetPassword.newPassword')}
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        className="w-full p-3 mb-4 border rounded-md bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      <input
+        type="password"
+        placeholder={t('animio.resetPassword.confirmPassword')}
+        value={confirm}
+        onChange={(e) => setConfirm(e.target.value)}
+        className="w-full p-3 mb-4 border rounded-md bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+
+      <button
+        onClick={handleReset}
+        className="w-full py-3 px-6 bg-blue-600 text-white font-bold rounded-md hover:opacity-90 transition-opacity duration-200"
+      >
+        {t('animio.resetPassword.button')}
+      </button>
+
+      {message && <p className="mt-4 text-base">{message}</p>}
+    </main>
+  )
+}
+
+export default ResetPassword

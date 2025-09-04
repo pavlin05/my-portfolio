@@ -1,9 +1,15 @@
 {
+  "nav": {
+    "home": "Inicio",
+    "aboutMe": "Sobre mí",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
   "home": {
     "title": "Hola, me llamo Pablo",
     "frontend": "Desarrollador Frontend ",
     "backend": "Desarrollador Backend ",
-    "description": "Bienvenidos a mi portafolio, soy un desarrollador Frontend (React) y Backend (NodeJs).",
+    "description": "¡Bienvenido a mi portfolio! Soy desarrollador Full Stack especializado en React, Node.js y React Native. Creo aplicaciones web y móviles modernas, intuitivas y de alto rendimiento, transformando ideas en experiencias digitales completas.",
     "aboutMe": "Sobre mí"
   },
   "aboutMe": {
@@ -73,6 +79,20 @@
         "short": "Password must be at least 6 characters long.",
         "session": "Error creating session."
       }
+    },
+    "deleteAccount": {
+      "title": "Eliminación de Cuenta – Animio",
+      "description": "Para eliminar permanentemente tu cuenta de Animio y todos los datos asociados, envía un correo electrónico a la dirección indicada con el asunto \"Eliminar cuenta Animio\".",
+      "instructions": "En el correo, incluye tu nombre de usuario o dirección de correo electrónico registrada para facilitar el proceso de eliminación.",
+      "dataDeleted": "Los datos que se eliminarán incluyen:",
+      "dataItems": [
+        "Perfiles de animales (nombre, especie, edad, notas)",
+        "Historial de visitas veterinarias",
+        "Correo electrónico / login"
+      ],
+      "processing": "Los datos se eliminarán dentro de los 30 días posteriores a la solicitud. Una vez recibamos tu correo, tu cuenta entrará en el proceso de eliminación.",
+      "contact": "Puedes contactarnos a la misma dirección para cualquier consulta sobre el tratamiento de tus datos.",
+      "button": "Enviar Solicitud de Eliminación"
     }
   }
 }

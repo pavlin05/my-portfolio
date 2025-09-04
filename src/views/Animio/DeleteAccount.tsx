@@ -1,53 +1,57 @@
-import React from 'react';
-import styled from 'styled-components';
-
-const Container = styled.main`
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
-  color: ${({ theme }) => theme.textColor};
-`;
-
-const Title = styled.h1`
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: ${({ theme }) => theme.titleColor};
-`;
-
-const Description = styled.p`
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-`;
-
-const Highlight = styled.span`
-  font-weight: bold;
-`;
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import Typography from '../../components/Ui/Typography'
+import useQueryLang from '../../hooks/useQueryLang.ts'
 
 const DeleteAccount: React.FC = () => {
-    return (
-        <>
-            <Container>
-                <Title>Eliminazione account – Animio</Title>
-                <Description>
-                    Puoi richiedere la cancellazione del tuo account e di tutti i dati associati inviando una email a{' '}
-                    <Highlight>pablo.munoz05@hotmail.com</Highlight>. Indica il tuo username o email per facilitare l’eliminazione.
-                </Description>
-                <Description>
-                    I dati che verranno eliminati includono:
-                </Description>
-                <ul>
-                    <li>Profilo animali (nome, specie, età, note)</li>
-                    <li>Cronologia visite veterinarie</li>
-                    <li>Email / login</li>
-                </ul>
-                <Description>
-                    I dati saranno eliminati entro 30 giorni dalla richiesta. Se vuoi, puoi contattarci anche per ulteriori informazioni sul trattamento dei tuoi dati.
-                </Description>
-            </Container>
-        </>
-    );
-};
+  const { t } = useTranslation()
+  useQueryLang()
 
-export default DeleteAccount;
+  return (
+    <main className="max-w-3xl mx-auto px-6 py-12 ">
+      <Typography variant="h1" className="text-2xl font-bold mb-6">
+        {t('animio.deleteAccount.title')}
+      </Typography>
+
+      <Typography variant="p" className="mb-4 leading-relaxed">
+        {t('animio.deleteAccount.description')}
+      </Typography>
+
+      <Typography variant="p" className="mb-4 leading-relaxed">
+        {t('animio.deleteAccount.instructions')}
+      </Typography>
+
+      <Typography variant="p" className="mb-2  leading-relaxed">
+        {t('animio.deleteAccount.dataDeleted')}
+      </Typography>
+      <ul className="list-disc list-inside mb-4">
+        {(
+          t('animio.deleteAccount.dataItems', {
+            returnObjects: true,
+          }) as string[]
+        ).map((item, i) => (
+          <li key={i}>
+            <Typography variant="span">{item}</Typography>
+          </li>
+        ))}
+      </ul>
+
+      <Typography variant="p" className="mb-4  leading-relaxed">
+        {t('animio.deleteAccount.processing')}
+      </Typography>
+
+      <Typography variant="p" className="mb-6  leading-relaxed">
+        {t('animio.deleteAccount.contact')}
+      </Typography>
+
+      <a
+        href="mailto:pablo.munoz05@hotmail.com?subject=Elimina%20account%20Animio"
+        className="inline-block bg-red-600 text-white font-bold px-6 py-3 rounded-lg hover:opacity-90 transition-opacity duration-200"
+      >
+        {t('animio.deleteAccount.button')}
+      </a>
+    </main>
+  )
+}
+
+export default DeleteAccount
