@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const Wrapper = styled.div`
   display: flex;
@@ -9,11 +9,7 @@ const Wrapper = styled.div`
 `
 
 const Services = () => {
-    return (
-        <Wrapper id="services">
-            servizi
-        </Wrapper>
-    );
-};
+  return <Wrapper id="services">servizi</Wrapper>
+}
 
-export default Services;
+export default Services

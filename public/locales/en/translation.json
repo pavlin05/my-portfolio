@@ -1,9 +1,15 @@
 {
+  "nav": {
+    "home": "Home",
+    "aboutMe": "About Me",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
   "home": {
     "title": "Hi, my name is Pablo",
     "frontend": "Frontend Developer ",
     "backend": "Backend Developer ",
-    "description": "Welcome to my portfolio, I am a Frontend (React) and Backend (NodeJs) developer.",
+    "description": "Welcome to my portfolio! I’m a Full Stack Developer specialized in React, Node.js, and React Native. I build modern, intuitive, and high-performance web and mobile applications, turning ideas into complete digital experiences.",
     "aboutMe": "About me"
   },
   "aboutMe": {
@@ -73,6 +79,20 @@
         "short": "Password must be at least 6 characters long.",
         "session": "Error creating session."
       }
+    },
+    "deleteAccount": {
+      "title": "Account Deletion – Animio",
+      "description": "To permanently delete your Animio account and all associated data, send an email to the indicated address with the subject \"Delete Animio Account\".",
+      "instructions": "In the email, include your username or registered email address to facilitate the deletion process.",
+      "dataDeleted": "The data that will be deleted includes:",
+      "dataItems": [
+        "Animal profiles (name, species, age, notes)",
+        "Veterinary visit history",
+        "Email / login"
+      ],
+      "processing": "Data will be deleted within 30 days of the request. Once we receive your email, your account will enter the deletion process.",
+      "contact": "You can contact us at the same address for any questions regarding your data.",
+      "button": "Send Deletion Request"
     }
   }
 }

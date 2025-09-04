@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+@theme {
+    --color-amigos-500: oklch(0.72 0.11 178);
+}*/
+
+
+/* Animazione del cursore iTyped */
+.ityped-cursor {
+    opacity: 1;
+    animation: blink 0.3s infinite alternate;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
