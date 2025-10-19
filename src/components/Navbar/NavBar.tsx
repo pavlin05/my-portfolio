@@ -106,7 +106,7 @@ const NavBar: React.FC = () => {
                     onClick={() => changeLanguage(lang.code)}
                   >
                     <span>{lang.flag}</span>
-                    <span className="font-medium">{lang.label}</span>
+                    <Typography variant={'span'}>{lang.label}</Typography>
                   </li>
                 ))}
               </ul>
