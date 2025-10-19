@@ -15,7 +15,7 @@ const Home: React.FC = () => {
       showCursor: true,
       strings: [t('home.frontend'), t('home.backend')],
     })
-  }, [t])
+  }, [])
 
   return (
     <section
