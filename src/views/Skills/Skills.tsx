@@ -8,8 +8,14 @@ import {
   SiNodedotjs,
   SiReact,
   SiRedux,
-  SiStyledcomponents,
   SiTypescript,
+  SiTailwindcss,
+  SiReactquery,
+  SiGraphql,
+  SiGithub,
+  SiExpo,
+  SiBun,
+  SiStyledcomponents,
 } from 'react-icons/si'
 import { Section, SectionSeparator } from '../../components/Section/Section.tsx'
 import Typography from '../../components/Ui/Typography'
@@ -22,7 +28,7 @@ type SkillIconProps = {
 const SkillIcon: React.FC<SkillIconProps> = ({ label, icon }) => (
   <div className="flex flex-col items-center text-center gap-2 font-bold transition-transform duration-300 hover:scale-110">
     {icon}
-    <span>{label}</span>
+    <Typography variant={'span'}>{label}</Typography>
   </div>
 )
 
@@ -41,16 +47,47 @@ const Skills: React.FC = () => {
       icon: <SiTypescript className="w-16 h-16 text-[#3178C6]" />,
     },
     { label: 'React', icon: <SiReact className="w-16 h-16 text-[#61DAFB]" /> },
+    {
+      label: 'React Native',
+      icon: <SiReact className="w-16 h-16 text-[#61DAFB]" />,
+    },
+    {
+      label: 'Expo',
+      icon: <SiExpo className="w-16 h-16 text-[#1B1F23] dark:text-[#FFFFFF]" />,
+    },
+
     { label: 'Redux', icon: <SiRedux className="w-16 h-16 text-[#764ABC]" /> },
     {
-      label: 'NodeJs',
-      icon: <SiNodedotjs className="w-16 h-16 text-[#339933]" />,
+      label: 'React Query',
+      icon: <SiReactquery className="w-16 h-16 text-[#FF4154]" />,
     },
     {
       label: 'Styled Components',
       icon: <SiStyledcomponents className="w-16 h-16 text-[#DB7093]" />,
     },
+    {
+      label: 'Tailwind CSS',
+      icon: <SiTailwindcss className="w-16 h-16 text-[#06B6D4]" />,
+    },
+    {
+      label: 'NodeJs',
+      icon: <SiNodedotjs className="w-16 h-16 text-[#339933]" />,
+    },
+    {
+      label: 'Bun',
+      icon: <SiBun className="w-16 h-16  text-[#D3A792] dark:text-[#F9F1E1]" />,
+    },
     { label: 'Git', icon: <SiGit className="w-16 h-16 text-[#F14E32]" /> },
+    {
+      label: 'GitHub',
+      icon: (
+        <SiGithub className="w-16 h-16 text-[#181717] dark:text-[#FFFFFF]" />
+      ),
+    },
+    {
+      label: 'GraphQL',
+      icon: <SiGraphql className="w-16 h-16 text-[#E10098]" />,
+    },
   ]
 
   return (
