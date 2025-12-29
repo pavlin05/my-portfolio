@@ -41,7 +41,7 @@ const Home: React.FC = () => {
       <div className="flex justify-center">
         <div className="w-[350px] h-[350px] md:w-[400px] md:h-[400px] rounded-full border-[1rem] border-blue-600 dark:border-blue-400 overflow-hidden">
           <img
-            src="/images/image01.jpeg"
+            src="/images/image01.jpg"
             alt="profile"
             className="w-full h-full object-cover"
           />
