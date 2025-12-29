@@ -15,7 +15,8 @@ import {
   SiGithub,
   SiExpo,
   SiBun,
-  SiStyledcomponents, SiVuedotjs,
+  SiStyledcomponents,
+  SiVuedotjs,
 } from 'react-icons/si'
 import { Section, SectionSeparator } from '../../components/Section/Section.tsx'
 import Typography from '../../components/Ui/Typography'
@@ -57,7 +58,7 @@ const Skills: React.FC = () => {
     },
     {
       label: 'Vue',
-      icon: <SiVuedotjs className="w-16 h-16 text-[#41B883]"/>,
+      icon: <SiVuedotjs className="w-16 h-16 text-[#41B883]" />,
     },
     { label: 'Redux', icon: <SiRedux className="w-16 h-16 text-[#764ABC]" /> },
     {

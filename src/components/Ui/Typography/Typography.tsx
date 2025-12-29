@@ -18,7 +18,7 @@ const typography = tv({
       false: 'font-normal',
     },
     textColor: {
-      default: 'text-gray-800 dark:text-gray-200',
+      default: 'text-gray-800 dark:text-gray-400',
       primary: 'text-blue-600',
       secondary: 'text-purple-600',
       success: 'text-green-600',
