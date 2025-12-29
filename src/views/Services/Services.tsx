@@ -1,15 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
+import { Section } from '../../components/Section/Section.tsx'
 
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-`
-
-const Services = () => {
-  return <Wrapper id="services">servizi</Wrapper>
+const Services: React.FC = () => {
+  return <Section id="services">servizi</Section>
 }
 
 export default Services

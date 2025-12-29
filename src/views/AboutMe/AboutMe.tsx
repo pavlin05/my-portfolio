@@ -15,7 +15,6 @@ const AboutMe: React.FC = () => {
 
   return (
     <Section id="aboutMe" className="gap-12 justify-center">
-      {/* Titolo + separatore */}
       <div className="text-center">
         <Typography variant="h2" bold>
           {t('aboutMe.title')}
@@ -23,26 +22,22 @@ const AboutMe: React.FC = () => {
         <SectionSeparator />
       </div>
 
-      {/* Contenuto a 2 colonne */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-start">
-        {/* Info personali */}
-        <div className="w-full space-y-4">
+        <div className="flex flex-col gap-4 h-full w-full">
           {information.map((info, index) => (
             <div key={index} className="flex">
-              <span className="w-32 font-semibold text-gray-900 dark:text-gray-100">
+              <Typography variant="p" className="w-32" bold>
                 {info.label}:
-              </span>
-              <span className="flex-1 text-gray-700 dark:text-gray-300">
-                {info.text}
-              </span>
+              </Typography>
+              <Typography variant="span">{info.text}</Typography>
             </div>
           ))}
         </div>
 
         {/* Descrizione */}
-        <p className="text-justify text-gray-700 dark:text-gray-300">
+        <Typography className="text-justify">
           {t('aboutMe.description')}
-        </p>
+        </Typography>
       </div>
     </Section>
   )

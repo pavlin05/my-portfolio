@@ -22,12 +22,10 @@ const Home: React.FC = () => {
       id="home"
       className="min-h-[calc(100vh-70px)] grid place-items-center gap-6 p-6 md:grid-cols-2"
     >
-      {/* Left text content */}
       <div className="flex flex-col gap-4">
         <Typography variant="h1" bold className="text-4xl md:text-5xl">
           {t('home.title')}
         </Typography>
-
         <Typography variant="h4">
           &#60;&nbsp;
           <span
@@ -36,16 +34,14 @@ const Home: React.FC = () => {
           />
           &#47;&#62;
         </Typography>
-        <Typography className="text-gray-600 dark:text-gray-400">
-          {t('home.description')}
-        </Typography>
+        <Typography>{t('home.description')}</Typography>
       </div>
 
       {/* Right image */}
       <div className="flex justify-center">
         <div className="w-[350px] h-[350px] md:w-[400px] md:h-[400px] rounded-full border-[1rem] border-blue-600 dark:border-blue-400 overflow-hidden">
           <img
-            src="/images/image01.jpg"
+            src="/images/image01.jpeg"
             alt="profile"
             className="w-full h-full object-cover"
           />
