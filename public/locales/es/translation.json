@@ -3,6 +3,7 @@
     "home": "Inicio",
     "aboutMe": "Sobre mí",
     "skills": "Habilidades",
+    "projects": "Proyectos",
     "contact": "Contacto"
   },
   "home": {
@@ -27,6 +28,38 @@
   },
   "contact": {
     "title": "Contacto"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "animio": {
+      "name": "Animio",
+      "description": "Animio es una aplicación móvil diseñada para simplificar la gestión de la salud de tus mascotas. Ya sea que tengas perros, gatos u otras mascotas, puedes organizar toda la información importante en un solo lugar. La aplicación te permite gestionar perfiles de mascotas con fotos y datos personalizados, registrar visitas médicas, vacunas y tratamientos, encontrar veterinarios y clínicas cercanas, y gestionar fácilmente configuraciones y preferencias.",
+      "tagline": "Todo para tus mascotas",
+      "features": {
+        "title": "Características",
+        "profiles": "Gestionar perfiles de mascotas con fotos y datos personalizados",
+        "visits": "Registrar visitas médicas, vacunas y tratamientos",
+        "medicines": "Gestionar medicinas y notas personales",
+        "veterinarians": "Encontrar veterinarios y clínicas cercanas"
+      },
+      "technologies": "Tecnologías",
+      "appStore": "Ver en App Store"
+    },
+    "fakestore": {
+      "name": "FakeStore Vue App",
+      "description": "Aplicación de comercio electrónico moderna construida con Vue 3, TypeScript y Tailwind CSS. La aplicación utiliza la Fake Store API para mostrar productos, gestionar el carrito y proporcionar una experiencia de compra completa. Incluye funciones como búsqueda de productos, filtros por categoría, gestión del carrito y checkout.",
+      "tagline": "Comercio electrónico moderno con Vue 3",
+      "features": {
+        "title": "Características",
+        "products": "Catálogo completo de productos con búsqueda y filtros",
+        "cart": "Gestión del carrito con agregar/eliminar productos",
+        "responsive": "Diseño responsive y mobile-friendly",
+        "api": "Integración con Fake Store API"
+      },
+      "technologies": "Tecnologías",
+      "liveDemo": "Ver Demo",
+      "github": "Ver en GitHub"
+    }
   },
   "animio": {
     "privacy": {

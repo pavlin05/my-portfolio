@@ -3,7 +3,6 @@
     "home": "Home",
     "aboutMe": "A proposito di me",
     "skills": "Le mie competenze",
-    "projects": "Progetti",
     "contact": "Contatti"
   },
   "home": {
@@ -28,38 +27,6 @@
   },
   "contact": {
     "title": "Contatti"
-  },
-  "projects": {
-    "title": "Progetti",
-    "animio": {
-      "name": "Animio",
-      "description": "Animio è un'applicazione mobile progettata per semplificare la gestione della salute dei tuoi animali domestici. Che tu abbia cani, gatti o altri pet, puoi organizzare tutte le informazioni importanti in un unico posto. L'app ti consente di gestire profili animali con foto e dati personalizzati, registrare visite mediche, vaccini e cure, trovare veterinari e cliniche vicino a te, e gestire facilmente impostazioni e preferenze.",
-      "tagline": "Tutto per i tuoi animali",
-      "features": {
-        "title": "Funzionalità",
-        "profiles": "Gestire profili animali con foto e dati personalizzati",
-        "visits": "Registrare visite mediche, vaccini e cure",
-        "medicines": "Gestire medicine e note personali",
-        "veterinarians": "Trovare veterinari e cliniche vicino a te"
-      },
-      "technologies": "Tecnologie",
-      "appStore": "Visualizza su App Store"
-    },
-    "fakestore": {
-      "name": "FakeStore Vue App",
-      "description": "Applicazione e-commerce moderna costruita con Vue 3, TypeScript e Tailwind CSS. L'app utilizza la Fake Store API per mostrare prodotti, gestire il carrello, e fornire un'esperienza di shopping completa. Include funzionalità come ricerca prodotti, filtri per categoria, gestione del carrello e checkout.",
-      "tagline": "E-commerce moderno con Vue 3",
-      "features": {
-        "title": "Funzionalità",
-        "products": "Catalogo prodotti completo con ricerca e filtri",
-        "cart": "Gestione del carrello con aggiunta/rimozione prodotti",
-        "responsive": "Design responsive e mobile-friendly",
-        "api": "Integrazione con Fake Store API"
-      },
-      "technologies": "Tecnologie",
-      "liveDemo": "Vedi Demo",
-      "github": "Vedi su GitHub"
-    }
   },
   "animio": {
     "privacy": {
