@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './views/Home/Home'
 import AboutMe from './views/AboutMe'
 import Skills from './views/Skills'
+import Projects from './views/Projects'
 import Contact from './views/Contact'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import PrivacyPolicy from './views/Animio/PrivacyPolicy'
@@ -23,7 +24,7 @@ const App: React.FC = () => {
                   <Home />
                   <AboutMe />
                   <Skills />
-                  {/*<Jobs/>*/}
+                  <Projects />
                   {/*<Services/>*/}
                   <Contact />
                 </main>

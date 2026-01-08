@@ -3,7 +3,6 @@
     "home": "Home",
     "aboutMe": "About Me",
     "skills": "Skills",
-    "projects": "Projects",
     "contact": "Contact"
   },
   "home": {
@@ -28,38 +27,6 @@
   },
   "contact": {
     "title": "Contact"
-  },
-  "projects": {
-    "title": "Projects",
-    "animio": {
-      "name": "Animio",
-      "description": "Animio is a mobile application designed to simplify the management of your pets' health. Whether you have dogs, cats, or other pets, you can organize all important information in one place. The app allows you to manage pet profiles with photos and custom data, record medical visits, vaccines, and treatments, find nearby veterinarians and clinics, and easily manage settings and preferences.",
-      "tagline": "Everything for your pets",
-      "features": {
-        "title": "Features",
-        "profiles": "Manage pet profiles with photos and custom data",
-        "visits": "Record medical visits, vaccines, and treatments",
-        "medicines": "Track medicines and personal notes",
-        "veterinarians": "Find nearby veterinarians and clinics"
-      },
-      "technologies": "Technologies",
-      "appStore": "View on App Store"
-    },
-    "fakestore": {
-      "name": "FakeStore Vue App",
-      "description": "Modern e-commerce application built with Vue 3, TypeScript, and Tailwind CSS. The app uses the Fake Store API to display products, manage cart, and provide a complete shopping experience. Includes features like product search, category filters, cart management, and checkout.",
-      "tagline": "Modern e-commerce with Vue 3",
-      "features": {
-        "title": "Features",
-        "products": "Complete product catalog with search and filters",
-        "cart": "Cart management with add/remove products",
-        "responsive": "Responsive and mobile-friendly design",
-        "api": "Integration with Fake Store API"
-      },
-      "technologies": "Technologies",
-      "liveDemo": "View Demo",
-      "github": "View on GitHub"
-    }
   },
   "animio": {
     "privacy": {

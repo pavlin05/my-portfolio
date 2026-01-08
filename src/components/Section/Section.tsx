@@ -14,10 +14,7 @@ export const Section: React.FC<SectionProps> = ({
 }) => (
   <section
     id={id}
-    className={twMerge(
-      'flex flex-col px-16 py-16 md:min-h-[100dvh] max-w-screen-lg ',
-      className,
-    )}
+    className={twMerge('flex flex-col p-8 md:p-16', className)}
     {...props}
   >
     {children}

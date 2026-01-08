@@ -12,7 +12,7 @@ const NavBar: React.FC = () => {
   const [langOpen, setLangOpen] = useState(false)
   const { t, i18n } = useTranslation()
 
-  const navItems = ['home', 'aboutMe', 'skills', 'contact']
+  const navItems = ['home', 'aboutMe', 'skills', 'projects', 'contact']
 
   const toggleMenu = () => setMenuOpen(!menuOpen)
   const toggleLang = () => setLangOpen(!langOpen)
