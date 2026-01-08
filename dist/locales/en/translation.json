@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "home": "Home",
+    "aboutMe": "About Me",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Hi, my name is Pablo",
+    "frontend": "Frontend Developer ",
+    "backend": "Backend Developer ",
+    "description": "Welcome to my portfolio! I’m a Full Stack Developer specialized in React, Node.js, and React Native, with knowledge also in Vue.js. I build modern, intuitive, and high-performance web and mobile applications, turning ideas into complete digital experiences.",
+    "aboutMe": "About me"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "name": "Name",
+    "bornOn": "Born on",
+    "residence": "Residence",
+    "email": "Email address",
+    "italy": "Italy",
+    "dateOfBirth": "9 November, 1989",
+    "description": "Hi, my name is Pablo Munoz. I am a Frontend and Backend developer with experience in web applications based on HTML5, CSS3, ReactJS, ExpressJs, MongoDB, and MySQL. I am self-taught and eager to learn new technologies and expand my horizons."
+  },
+  "skills": {
+    "title": "My Skills"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "animio": {
+    "privacy": {
+      "title": "Privacy Policy – Animio",
+      "lastUpdated": "Last updated",
+      "lastUpdatedDate": "30 August 2025",
+      "index": "Index",
+      "sections": {
+        "intro": "Introduction",
+        "data": "Data collected",
+        "purpose": "Purpose of processing",
+        "legal": "Legal basis (GDPR)",
+        "sharing": "Data sharing",
+        "retention": "Data retention",
+        "security": "Security",
+        "rights": "User rights",
+        "minors": "Privacy of minors",
+        "thirdparties": "Third-party services",
+        "cookies": "Cookies and similar technologies",
+        "contact": "Contact",
+        "changes": "Changes to this policy"
+      },
+      "content": {
+        "intro": "Animio respects user privacy and is committed to protecting personal data and information related to pets. This policy describes how data is collected, used, and protected when using the Animio app.",
+        "data": "Animio may collect: pet profile data (name, species/breed, age, sex, photos, notes), veterinary visit data, location if enabled, device technical data, and contact information if provided.",
+        "purpose": "Collected data is used to manage pet profiles, show nearby veterinarians, send reminders and notifications, improve app quality and security, and provide user support.",
+        "legal": "Data processing is based on: contract execution, consent for optional features, legitimate interest for security and improvement, and legal obligations.",
+        "sharing": "Personal data is not sold. Shared only with providers such as Supabase, mapping services (Apple/Google Maps), or messaging services needed for app functionality.",
+        "retention": "Data is retained for the time necessary to provide services and comply with legal obligations. Users may request data deletion at any time.",
+        "security": "Communications between the app and server are secured via HTTPS/TLS, and technical and organizational measures are applied to protect data.",
+        "rights": "Users have the right to access, modify, delete data, limit processing, object, request portability, or withdraw consent.",
+        "minors": "The app is not intended for children under 14. Data of minors is not knowingly collected. Parents or guardians can request removal.",
+        "thirdparties": "The app may integrate third-party services that handle data according to their own policies.",
+        "cookies": "The mobile app does not use cookies. The website may use technical or analytical cookies, manageable via the browser.",
+        "contact": "Data controller: Pablo Munoz – Email: pablo.munoz05@hotmail.com – Website: https://www.pablo-munoz.com",
+        "changes": "This Privacy Policy may be updated periodically. Changes will be posted on this page."
+      },
+      "disclaimer": ""
+    },
+    "resetPassword": {
+      "title": "Reset Password – Animio",
+      "description": "Enter your new password for your Animio account.",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "button": "Update password",
+      "messages": {
+        "success": "Password updated successfully! You can now log in to the Animio app.",
+        "mismatch": "Passwords do not match.",
+        "invalid": "Invalid or expired link. Please request a new reset.",
+        "short": "Password must be at least 6 characters long.",
+        "session": "Error creating session."
+      }
+    },
+    "deleteAccount": {
+      "title": "Account Deletion – Animio",
+      "description": "To permanently delete your Animio account and all associated data, send an email to the indicated address with the subject \"Delete Animio Account\".",
+      "instructions": "In the email, include your username or registered email address to facilitate the deletion process.",
+      "dataDeleted": "The data that will be deleted includes:",
+      "dataItems": [
+        "Animal profiles (name, species, age, notes)",
+        "Veterinary visit history",
+        "Email / login"
+      ],
+      "processing": "Data will be deleted within 30 days of the request. Once we receive your email, your account will enter the deletion process.",
+      "contact": "You can contact us at the same address for any questions regarding your data.",
+      "button": "Send Deletion Request"
+    }
+  }
+}

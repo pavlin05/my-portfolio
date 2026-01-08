@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "aboutMe": "Sobre mí",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Hola, me llamo Pablo",
+    "frontend": "Desarrollador Frontend ",
+    "backend": "Desarrollador Backend ",
+    "description": "¡Bienvenido a mi portfolio! Soy desarrollador Full Stack especializado en React, Node.js y React Native, con conocimientos también en Vue.js. Creo aplicaciones web y móviles modernas, intuitivas y de alto rendimiento, transformando ideas en experiencias digitales completas.",
+    "aboutMe": "Sobre mí"
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "name": "Nombre",
+    "bornOn": "Nacido el",
+    "residence": "Residencia",
+    "email": "Dirección de correo",
+    "italy": "Italia",
+    "dateOfBirth": "9 de noviembre de 1989",
+    "description": "Hola, me llamo Pablo Munoz. Soy desarrollador Frontend y Backend con experiencia en aplicaciones web basadas en HTML5, CSS3, ReactJS, ExpressJs, MongoDB y MySQL. Soy autodidacta y tengo muchas ganas de aprender nuevas tecnologías y ampliar mis horizontes."
+  },
+  "skills": {
+    "title": "Mis Habilidades"
+  },
+  "contact": {
+    "title": "Contacto"
+  },
+  "animio": {
+    "privacy": {
+      "title": "Política de privacidad – Animio",
+      "lastUpdated": "Última actualización",
+      "lastUpdatedDate": "30 de agosto de 2025",
+      "index": "Índice",
+      "sections": {
+        "intro": "Introducción",
+        "data": "Datos recopilados",
+        "purpose": "Finalidad del tratamiento",
+        "legal": "Base legal (GDPR)",
+        "sharing": "Compartición de datos",
+        "retention": "Conservación",
+        "security": "Seguridad",
+        "rights": "Derechos de los usuarios",
+        "minors": "Privacidad de menores",
+        "thirdparties": "Servicios de terceros",
+        "cookies": "Cookies y tecnologías similares",
+        "contact": "Contacto",
+        "changes": "Cambios en la política"
+      },
+      "content": {
+        "intro": "Animio respeta la privacidad de los usuarios y se compromete a proteger los datos personales y la información relacionada con las mascotas. Esta política describe cómo se recopilan, usan y protegen los datos al utilizar la aplicación Animio.",
+        "data": "Animio puede recopilar: datos de perfiles de mascotas (nombre, especie/raza, edad, sexo, fotos, notas), datos de visitas veterinarias, ubicación si se habilita, datos técnicos del dispositivo y datos de contacto si se proporcionan.",
+        "purpose": "Los datos recopilados se utilizan para gestionar los perfiles de mascotas, mostrar veterinarios cercanos, enviar recordatorios y notificaciones, mejorar la calidad y seguridad de la aplicación y proporcionar soporte a los usuarios.",
+        "legal": "El tratamiento de datos se basa en: ejecución del contrato, consentimiento para funciones opcionales, interés legítimo para seguridad y mejora, y obligaciones legales.",
+        "sharing": "Los datos personales no se venden. Se comparten solo con proveedores como Supabase, servicios de mapas (Apple/Google Maps) o servicios de mensajería necesarios para el funcionamiento de la app.",
+        "retention": "Los datos se conservan el tiempo necesario para prestar los servicios y cumplir con las obligaciones legales. Los usuarios pueden solicitar la eliminación de sus datos en cualquier momento.",
+        "security": "Las comunicaciones entre la app y el servidor están protegidas mediante HTTPS/TLS, y se aplican medidas técnicas y organizativas para proteger los datos.",
+        "rights": "Los usuarios tienen derecho a acceder, modificar, eliminar datos, limitar el tratamiento, oponerse, solicitar portabilidad o revocar el consentimiento.",
+        "minors": "La app no está destinada a menores de 14 años. No se recopilan datos de menores de forma consciente. Los padres o tutores pueden solicitar su eliminación.",
+        "thirdparties": "La app puede integrar servicios de terceros que manejan los datos según sus propias políticas.",
+        "cookies": "La app móvil no utiliza cookies. El sitio web puede usar cookies técnicas o analíticas, gestionables desde el navegador.",
+        "contact": "Responsable del tratamiento: Pablo Munoz – Email: pablo.munoz05@hotmail.com – Sitio web: https://www.pablo-munoz.com",
+        "changes": "Esta Política de Privacidad puede actualizarse periódicamente. Los cambios se publicarán en esta página."
+      },
+      "disclaimer": ""
+    },
+    "resetPassword": {
+      "title": "Reset Password – Animio",
+      "description": "Enter your new password for your Animio account.",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "button": "Update password",
+      "messages": {
+        "success": "¡Contraseña actualizada correctamente! Ahora puedes iniciar sesión en la aplicación Animio.",
+        "mismatch": "Passwords do not match.",
+        "invalid": "Invalid or expired link. Please request a new reset.",
+        "short": "Password must be at least 6 characters long.",
+        "session": "Error creating session."
+      }
+    },
+    "deleteAccount": {
+      "title": "Eliminación de Cuenta – Animio",
+      "description": "Para eliminar permanentemente tu cuenta de Animio y todos los datos asociados, envía un correo electrónico a la dirección indicada con el asunto \"Eliminar cuenta Animio\".",
+      "instructions": "En el correo, incluye tu nombre de usuario o dirección de correo electrónico registrada para facilitar el proceso de eliminación.",
+      "dataDeleted": "Los datos que se eliminarán incluyen:",
+      "dataItems": [
+        "Perfiles de animales (nombre, especie, edad, notas)",
+        "Historial de visitas veterinarias",
+        "Correo electrónico / login"
+      ],
+      "processing": "Los datos se eliminarán dentro de los 30 días posteriores a la solicitud. Una vez recibamos tu correo, tu cuenta entrará en el proceso de eliminación.",
+      "contact": "Puedes contactarnos a la misma dirección para cualquier consulta sobre el tratamiento de tus datos.",
+      "button": "Enviar Solicitud de Eliminación"
+    }
+  }
+}
