@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import {
-  SiCss3,
+  SiCss,
   SiGit,
   SiHtml5,
   SiJavascript,
@@ -38,7 +38,7 @@ const Skills: React.FC = () => {
 
   const skills: SkillIconProps[] = [
     { label: 'Html', icon: <SiHtml5 className="w-16 h-16 text-[#E34F26]" /> },
-    { label: 'Css', icon: <SiCss3 className="w-16 h-16 text-[#1572B6]" /> },
+    { label: 'Css', icon: <SiCss className="w-16 h-16 text-[#1572B6]" /> },
     {
       label: 'JavaScript',
       icon: <SiJavascript className="w-16 h-16 text-[#F7DF1E]" />,

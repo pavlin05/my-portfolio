@@ -10,7 +10,7 @@ const AboutMe: React.FC = () => {
     { label: t('aboutMe.name'), text: 'Pablo Munoz' },
     // { label: t('aboutMe.bornOn'), text: t('aboutMe.dateOfBirth') },
     { label: t('aboutMe.residence'), text: t('aboutMe.italy') },
-    { label: t('aboutMe.email'), text: 'pavlin_05@hotmail.com' },
+    { label: t('aboutMe.email'), text: 'pablo.munoz05@hotmail.com' },
   ]
 
   return (
