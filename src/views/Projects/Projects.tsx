@@ -188,7 +188,10 @@ const Projects: React.FC = () => {
                     </Typography>
                     <ul className="list-disc list-inside flex flex-col gap-1.5 md:gap-2">
                       {project.features.map((feature, index) => (
-                        <li key={index}>
+                        <li
+                          key={index}
+                          className="text-gray-800 dark:text-gray-200"
+                        >
                           <Typography
                             variant="span"
                             className="text-xs md:text-sm"
