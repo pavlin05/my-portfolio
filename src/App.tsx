@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import PrivacyPolicy from './views/Animio/PrivacyPolicy'
 import DeleteAccount from './views/Animio/DeleteAccount'
 import ResetPassword from './views/Animio/ResetPassword'
-import NavBar from './components/Navbar/NavBar.tsx'
+import NavBar from './components/Navbar'
 
 const App: React.FC = () => {
   return (

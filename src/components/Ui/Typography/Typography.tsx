@@ -37,8 +37,7 @@ const typography = tv({
 type TypographyVariants = VariantProps<typeof typography>
 
 interface TypographyProps
-  extends Omit<TypographyVariants, 'color'>,
-    React.HTMLAttributes<HTMLElement> {
+  extends Omit<TypographyVariants, 'color'>, React.HTMLAttributes<HTMLElement> {
   as?: React.ElementType
   children: React.ReactNode
   textColor?: TypographyVariants['textColor']
