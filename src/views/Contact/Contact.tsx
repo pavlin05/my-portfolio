@@ -1,10 +1,6 @@
 import React from 'react'
-import {
-  SiFacebook,
-  SiInstagram,
-  SiLinkedin,
-  SiMinutemailer,
-} from 'react-icons/si'
+import { SiFacebook, SiInstagram, SiMinutemailer } from 'react-icons/si'
+import { FaLinkedin } from 'react-icons/fa'
 import { IconType } from 'react-icons'
 import { useTranslation } from 'react-i18next'
 import Typography from '../../components/Ui/Typography'
@@ -21,7 +17,7 @@ const contacts: ContactItem[] = [
   {
     label: 'LinkedIn',
     url: 'https://www.linkedin.com/in/pablo-munoz-001975144/',
-    icon: SiLinkedin,
+    icon: FaLinkedin,
     color: '#0A66C2',
   },
   {
