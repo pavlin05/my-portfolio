@@ -12,12 +12,12 @@ import parser from '@typescript-eslint/parser'
 export default defineConfig([
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  reactHooksPlugin.configs.flat['recommended-latest'],
   // Regole generali per JS/TS/JSX
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
     plugins: {
       js,
-      'react-hooks': reactHooksPlugin,
       'jsx-a11y': jsxA11yPlugin,
       prettier: prettierPlugin,
       'unused-imports': unusedImportsPlugin,
@@ -29,7 +29,6 @@ export default defineConfig([
       // React specific
       'react/react-in-jsx-scope': 'off',
       // React Hooks
-      'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
       // JSX a11y
       'jsx-a11y/anchor-is-valid': 'warn',
